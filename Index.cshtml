@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="chat-container">
+    <div class="chat-row">
+        <div class="chat-label">User</div>
+        <div class="chat-input-container">
+            <input type="text" id="userInput" class="chat-input" placeholder="Enter your username" />
+        </div>
+    </div>
+    <div class="chat-row">
+        <div class="chat-label">Message</div>
+        <div class="chat-input-container">
+            <input type="text" id="messageInput" class="chat-input" placeholder="Type your message" />
+        </div>
+    </div>
+    <div class="chat-row">
+        <div class="chat-button-container">
+            <button id="sendButton" class="chat-send-button">Send Message</button>
+        </div>
+    </div>
+    <div class="chat-messages">
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/clientHub.js"></script>
